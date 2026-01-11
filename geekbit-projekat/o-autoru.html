@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Autoru | GeekBit</title>
+      <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="icon" type="image/png" href="assets/img/neon-logo1.png">
+</head>
+<body>
+
+   <nav>
+        <a href="index.html" class="logo-container">
+           <img src="assets/img/neon-logo1.png" alt="GeekBit Logo" class="logo-img">
+            <span class="service-name">MARKETPLACE</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="komponente.html">Komponente</a></li>
+            <li><a href="quicksell.html">Instant Otkup</a></li>
+            <li><a href="o-autoru.html" style="color:var(--accent)">O Autoru</a></li>
+            <li><a href="index.html#contact">Prodaj</a></li>
+            <li>
+                <a href="Dokumentacija.pdf" download style="color:var(--accent); border:1px solid var(--accent); padding:5px 10px; border-radius:5px; margin-right:10px;">
+                    <i class="fas fa-file-pdf"></i> DOKUMENTACIJA
+                </a>
+            </li>
+
+            <li>
+                <a href="Projekat.zip" download style="color:var(--accent); border:1px solid var(--accent); padding:5px 10px; border-radius:5px;">
+                    <i class="fas fa-download"></i> ZIP PROJEKTA
+                </a>
+            </li>
+        </ul>
+      
+    </nav>
+    <main class="author-page-container">
+        
+        <div class="author-card">
+            <div class="author-image-wrapper">
+                <img src="assets/img/me.jpg" alt="Aleksa Krivokapić">
+                <div class="glow-circle"></div>
+            </div>
+
+            <div class="author-details">
+                <h4 class="subtitle">WEB DEVELOPER & FOUNDER</h4>
+                <h1 class="author-name">ALEKSA KRIVOKAPIĆ</h1>
+                <div class="index-badge">
+                    <i class="fas fa-id-card"></i> Indeks: 143/23
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="bio-text">
+                    <p>
+                        <strong style="color:var(--accent)">Obrazovanje:</strong><br>
+                        Završio sam <strong>ITHS</strong> (Srednju školu za informacione tehnologije), gde sam stekao snažne osnove u programiranju i IT infrastrukturi. Trenutno sam student na Visokoj školi, smer IT.
+                    </p>
+                    
+                    <p>
+                        <strong style="color:var(--accent)">O GeekBit projektu:</strong><br>
+                        GeekBit je nastao iz moje lične strasti prema hardveru. Počeo sam kao entuzijasta koji sklapa računare za prijatelje, a danas je to prepoznatljiv brend za servis, prodaju i savetovanje u vezi sa PC komponentama.
+                    </p>
+                    
+                    <p>
+                        Ovaj <em>Marketplace</em> je prirodan nastavak te priče – platforma koja omogućava gejmerima da sigurno i brzo trguju hardverom, bez nepotrebnih komplikacija.
+                    </p>
+                </div>
+
+                <div class="social-links-author">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+  <footer>
+        <div class="footer-content">
+            
+            <div class="footer-section about">
+                <a href="index.html" class="logo-container footer-brand-fix">
+                 <img src="assets/img/neon-logo1.png" alt="GeekBit Logo" class="logo-img">
+                    <span class="service-name">MARKETPLACE</span>
+                </a>
+                <p style="margin-top: 20px;">
+                    Prvi pravi marketplace za hardver entuzijaste. 
+                    Kupuj sigurno, prodaj brzo, upgrade-uj pametno.
+                </p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Navigacija</h3>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="komponente.html">Komponente</a></li>
+                    <li><a href="quicksell.html">Instant Otkup</a></li>
+                    <li><a href="index.html#contact">Postavi Oglas</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Zapratite nas</h3>
+                <p>Budite u toku sa najnovijim dropovima i popustima.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
+                <a href="https://discord.com/"><i class="fab fa-discord"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 GeekBit Marketplace | Aleksa Krivokapić 143/23
+        </div>
+    </footer>
+
+    <div id="custom-alert-box" style="display:none; position:fixed; top:20px; left:50%; transform:translateX(-50%); background:#1e1e1e; border:2px solid var(--accent); padding:20px; z-index:9999; text-align:center; box-shadow:0 0 30px rgba(0,0,0,0.8); border-radius:8px; min-width:300px;">
+    <h3 id="alert-title" style="font-family:'Nulshock'; margin-bottom:10px; color:var(--accent);">PORUKA</h3>
+    <p id="alert-message" style="color:#fff; margin-bottom:20px;"></p>
+    <button onclick="zatvoriAlert()" style="background:var(--accent); border:none; padding:8px 20px; cursor:pointer; font-weight:bold;">OK</button>
+</div>
+
+</body>
+</html>
