@@ -1,9 +1,7 @@
 console.log("Main.js je počeo sa radom.");
 
 // --- 1. PODEŠAVANJE PLACEHOLDERA (LOGO) ---
-// OVO JE SLIKA KOJA SE POJAVLJUJE AKO KORISNIK NE UNESE LINK
-// ILI AKO LINK SA INTERNETA NE RADI.
-// BITNO: Proveri da li ti je logo stvarno u ovom folderu!
+
 const PLACEHOLDER_IMG = "assets/img/neon-logo1.png"; 
 
 // --- FUNKCIJA ZA PORUKE ---
@@ -22,7 +20,6 @@ function zatvoriAlert() {
     if(box) box.style.display = 'none';
 }
 
-// --- 2. PODACI (SVI SU SA INTERNETA) ---
 // --- 2. PODACI (POPRAVLJENE KATEGORIJE) ---
 const defaultProizvodi = [
     {
