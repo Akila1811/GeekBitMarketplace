@@ -1,6 +1,4 @@
-/* =========================================
-   1. FONTOVI I VARIJABLE
-   ========================================= */
+/* 1. FONTOVI I VARIJABLE*/
 @font-face {
     font-family: 'Nulshock';
     src: url('../assets/fonts/nulshock bd.otf') format('opentype');
@@ -18,9 +16,7 @@
     --error: #ff4d4d;
 }
 
-/* =========================================
-   2. GLOBALNA PODEŠAVANJA (RESET)
-   ========================================= */
+/*  2. GLOBALNA PODEŠAVANJA (RESET) */
 * {
     margin: 0;
     padding: 0;
@@ -60,12 +56,12 @@ button,
     letter-spacing: 1px;
 }
 
-/* =========================================
+/* 
    3. NAVIGACIJA
-   ========================================= */
-/* =========================================
+   */
+/* 
    3. NAVIGACIJA (OPTIMIZOVANA)
-   ========================================= */
+   */
 nav {
     display: flex;
     justify-content: space-between; /* Razmakni logo i meni */
@@ -105,7 +101,7 @@ nav {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 15px; /* SMANJENO SA 30px NA 15px (ključna promena) */
+    gap: 15px; 
     margin-left: auto;
     margin-right: 15px;
 }
@@ -114,7 +110,7 @@ nav {
     text-decoration: none;
     color: var(--text-main);
     transition: 0.3s;
-    font-size: 0.85rem; /* SMANJENO SA 1rem NA 0.85rem */
+    font-size: 0.85rem; 
     font-weight: bold;
     white-space: nowrap; /* Sprečava prelamanje teksta u dugmićima */
 }
@@ -127,9 +123,9 @@ nav {
 .nav-links a i {
     margin-right: 5px;
 }
-/* =========================================
+/* 
    4. HERO SEKCIJA
-   ========================================= */
+    */
 .hero {
     height: 60vh;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1920');
@@ -155,9 +151,9 @@ nav {
     margin-top: 20px;
 }
 
-/* =========================================
+/* 
    5. KARTICE I GRID (NOVI KOMPAKTNI DIZAJN)
-   ========================================= */
+   */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
@@ -286,9 +282,9 @@ nav {
     transform: translateY(-3px);
 }
 
-/* =========================================
+/*
    6. FILTERI I FORME
-   ========================================= */
+  */
 .filters { text-align: center; margin-top: 20px; }
 .filter-btn {
     background: transparent;
@@ -325,17 +321,16 @@ nav {
     box-shadow: 0 0 15px rgba(0, 255, 136, 0.4); font-weight: bold;
 }
 
-/* =========================================
+/* 
    7. STRANICA O AUTORU & QUICK SELL
-   ========================================= */
-/* Zajednički stil za containere da izbegnemo overwrite */
+   */
 .author-page-container, .qs-container {
     min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px 5%;
-    background: #121212; /* Popravljena pozadina */
+    background: #121212; 
     gap: 50px;
 }
 
@@ -361,7 +356,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 50px 0 60px; /* Margine za pozicioniranje */
+    margin: 0 50px 0 60px; 
     padding: 10px;
     overflow: visible;
     border-radius: 50%;
@@ -420,9 +415,9 @@ nav {
 .qs-btn { background: transparent; border: 2px solid var(--accent); color: var(--accent); transition: 0.3s; margin-top: 10px; }
 .qs-btn:hover { background: var(--accent); color: #000; box-shadow: 0 0 20px var(--accent); }
 
-/* =========================================
+/* 
    8. MODALI I LIGHTBOX
-   ========================================= */
+    */
 /* Custom Modal */
 .modal {
     display: none; position: fixed; z-index: 2000; padding-top: 60px;
@@ -492,9 +487,9 @@ nav {
 .lb-close:hover { transform: rotate(90deg) scale(1.2); }
 .lightboxOverlay { background-color: #000 !important; opacity: 0.9 !important; }
 
-/* =========================================
+/* 
    9. FOOTER
-   ========================================= */
+   */
 footer {
     background-color: #0a0a0a; color: #fff; padding-top: 50px;
     border-top: 3px solid var(--accent); box-shadow: 0 -10px 30px rgba(0, 255, 136, 0.1);
@@ -539,9 +534,9 @@ footer .service-name {
     font-size: 0.9rem; color: #666; border-top: 1px solid #1a1a1a;
 }
 
-/* =========================================
+/* 
    10. MEDIA QUERIES (MOBILE) - SVE NA JEDNOM MESTU
-   ========================================= */
+   */
 @media (max-width: 900px) {
     /* Quick Sell prelom */
     .qs-container { flex-direction: column; padding-top: 30px; }
@@ -583,4 +578,5 @@ footer .service-name {
     .cart-icon { display: none; }
     
     .hero h1 { font-size: 1.8rem; }
+
 }
