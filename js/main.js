@@ -1,10 +1,10 @@
 console.log("Main.js je počeo sa radom.");
 
-// --- 1. PODEŠAVANJE PLACEHOLDERA (LOGO) ---
+//PODEŠAVANJE PLACEHOLDERA (LOGO) 
 
 const PLACEHOLDER_IMG = "assets/img/neon-logo1.png"; 
 
-// --- FUNKCIJA ZA PORUKE ---
+//FUNKCIJA ZA PORUKE 
 function prikaziPoruku(naslov, tekst) {
     const box = document.getElementById('custom-alert-box');
     if(box) {
@@ -20,7 +20,7 @@ function zatvoriAlert() {
     if(box) box.style.display = 'none';
 }
 
-// --- 2. PODACI (POPRAVLJENE KATEGORIJE) ---
+//PODACI (POPRAVLJENE KATEGORIJE)
 const defaultProizvodi = [
     {
         id: 1,
@@ -101,9 +101,9 @@ function sacuvajProizvode(niz) {
 
 let proizvodi = ucitajProizvode();
 
-// ... DALJE NASTAVLJA FUNKCIJA napraviKarticu ...
+//DALJE NASTAVLJA FUNKCIJA napraviKarticu
 
-// --- 2. KARTICE ---
+//KARTICE
 function napraviKarticu(p) {
     if (!p) return '';
     
@@ -135,7 +135,7 @@ function napraviKarticu(p) {
     `;
 }
 
-// --- 3. PRIKAZIVANJE ---
+//PRIKAZIVANJE
 const latestContainer = document.getElementById('latest-container'); 
 const allContainer = document.getElementById('all-products-container'); 
 
@@ -165,7 +165,7 @@ function osveziPrikaz(filter = 'sve') {
 
 osveziPrikaz();
 
-// --- 4. DODAVANJE OGLASA ---
+//DODAVANJE OGLASA
 const forma = document.getElementById('oglas-form');
 if (forma) {
     forma.addEventListener('submit', function(e) {
@@ -214,7 +214,7 @@ if (forma) {
     });
 }
 
-// --- 5. FILTERI ---
+//FILTERI
 document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -223,7 +223,7 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     });
 });
 
-// --- 6. MODAL ZA KONTAKT ---
+//MODAL ZA KONTAKT
 const contactModal = document.getElementById("contact-modal");
 
 function otvoriKontakt(ime, email, telefon) {
@@ -251,15 +251,16 @@ window.onclick = function(event) {
 }
 
 
-// --- 7. DUGME ISTRAŽI PONUDU (SMOOTH SCROLL) ---
+//DUGME ISTRAŽI PONUDU (SMOOTH SCROLL)
 const exploreBtn = document.getElementById('explore-btn');
 
 if (exploreBtn) {
     exploreBtn.addEventListener('click', function() {
-        // Tražimo sekciju sa najnovijim oglasima
+        //Tražimo sekciju sa najnovijim oglasima
         const sekcija = document.querySelector('.latest-drops');
         if (sekcija) {
             sekcija.scrollIntoView({ behavior: 'smooth' });
         }
     });
+
 }
